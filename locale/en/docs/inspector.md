@@ -27,11 +27,10 @@ These commercial and open source tools make debugging Node.js apps easier.
 * Can also be installed independently with `npm install -g node-inspect`
   and invoked with `node-inspect myscript.js`.
 
-### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend) 55+
+### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend)
 
 * **Option 1**: Open `chrome://inspect` in a Chromium-based
-  browser. Click the Configure button and ensure your target host and port
-  are listed. Then select your Node.js app from the list.
+  browser. Click the "Open dedicated DevTools for Node" link.
 * **Option 2**: Install the Chrome Extension NIM (Node Inspector Manager):
   https://chrome.google.com/webstore/detail/nim-node-inspector-manage/gnhhdgbaldcilmgcpfddgdbkhjohddkj
 
@@ -110,5 +109,14 @@ The following table lists the impact of various runtime flags on debugging:
       </ul>
     </td>
   </tr>
+  <tr>
+    <td><code>node inspect --port=xxxx <i>script.js</i></code></td>
+    <td>
+      <ul>
+        <li>Spawn child process to run user's script under --inspect flag;
+            and use main process to run CLI debugger.</li>
+        <li>Listen on port <i>port</i> (default: 9229)</li>
+      </ul>
+    </td>
+  </tr>
 </table>
-

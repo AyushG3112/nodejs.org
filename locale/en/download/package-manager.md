@@ -9,6 +9,7 @@ title: Installing Node.js via package manager
 
 ----------------------------
 
+* [Android](#android)
 * [Arch Linux](#arch-linux)
 * [Debian and Ubuntu based Linux distributions](#debian-and-ubuntu-based-linux-distributions)
 * [Enterprise Linux and Fedora](#enterprise-linux-and-fedora)
@@ -20,9 +21,23 @@ title: Installing Node.js via package manager
 * [macOS](#macos)
 * [SmartOS and illumos](#smartos-and-illumos)
 * [Void Linux](#void-linux)
+* [Solus](#solus)
 * [Windows](#windows)
 
 ----------------------------
+
+## Android
+
+Android support is still experimental in Node.js, so precompiled binaries are not yet provided by Node.js developers.
+
+However, there are some third-party solutions. For example, [Termux](https://termux.com/) community provides terminal emulator and Linux environment for Android, as well as own package manager and [extensive collection](https://github.com/termux/termux-packages) of many precompiled applications. These commands in Termux app will install the last LTS or a current Node.js version respectively:
+
+```bash
+pkg install nodejs
+pkg install nodejs-current
+```
+
+Currently, Termux Node.js binaries are compiled without ICU and Inspector support.
 
 ## Arch Linux
 
@@ -74,10 +89,10 @@ sudo apt-get install -y build-essential
 
 **Supported Debian versions:**
 
-* **Debian 7** (wheezy)
-* **Debian 8 / stable** (jessie)
-* **Debian testing** (stretch, aliased to jessie)
-* **Debian unstable** (sid)
+* **Debian 8** (jessie, old-stable)
+* **Debian 9 / stable** (stretch)
+* **Debian testing** (buster to-be-released-as-next-stable)
+* **Debian unstable** (sid never-to-be-released, aka rolling)
 
 A Node.js package is also available in the [official repo](http://packages.debian.org/search?searchon=names&keywords=nodejs) for Debian Sid (unstable), Jessie (testing) and Wheezy (wheezy-backports) as "nodejs". It only installs a `nodejs` binary.
 
@@ -199,7 +214,7 @@ In a hurry for the latest updates?  [Grab them from epel-testing.](https://fedor
 **Supported Red Hat® Enterprise Linux® versions:**
 
 * **RHEL 6** (i686/x86_64)
-* **RHEL 7** (x86_64)
+* **RHEL 7** (aarch64/x86_64)
 
 RHEL 6 is no longer supported through EPEL, you can however use [Red Hat Software Collections](https://www.softwarecollections.org/en/scls/?search=nodejs).
 
@@ -208,9 +223,8 @@ Additionally, versions of **CentOS** and **Scientific Linux** corresponding to t
 **Supported Fedora versions:**
 
 * **Fedora Rawhide** (i686/x86_64/armv7hl/aarch64/ppc64/ppc64le/s390x)
+* **Fedora 27** (i686/x86_64/armv7hl/aarch64/ppc64/ppc64le/s390x)
 * **Fedora 26** (i686/x86_64/armv7hl/aarch64/ppc64/ppc64le)
-* **Fedora 25** (i686/x86_64/armv7hl)
-* **Fedora 24** (i686/x86_64/armv7hl)
 
 
 ## FreeBSD and OpenBSD
@@ -388,6 +402,14 @@ Void Linux ships node.js stable in the main repository.
 
 ```bash
 xbps-install -Sy nodejs
+```
+
+## Solus
+
+Solus provides node.js in its main repository.
+
+```bash
+sudo eopkg install nodejs
 ```
 
 
