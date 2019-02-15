@@ -32,7 +32,7 @@
     "autoprefixer-stylus": "0.14.0",
     "cheerio": "0.22.0",
     "chokidar": "1.7.0",
-    "handlebars": "4.0.10",
+    "handlebars": "4.0.13",
     "junk": "2.1.0",
     "lodash.defaultsdeep": "4.6.0",
     "marked": "^0.3.9",
