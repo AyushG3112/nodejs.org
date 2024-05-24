@@ -31,7 +31,7 @@
   "dependencies": {
     "autoprefixer-stylus": "0.14.0",
     "cheerio": "0.22.0",
-    "chokidar": "1.7.0",
+    "chokidar": "3.0.0",
     "handlebars": "4.0.10",
     "junk": "2.1.0",
     "lodash.defaultsdeep": "4.6.0",
@@ -49,7 +49,7 @@
     "ncp": "2.0.0",
     "node-version-data": "1.0.1",
     "octonode": "0.9.0",
-    "request": "2.83.0",
+    "request": "2.88.2",
     "require-dir": "0.3.2",
     "semver": "5.4.1",
     "st": "1.2.2",
