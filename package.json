@@ -43,7 +43,7 @@
     "metalsmith-markdown": "0.2.1",
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "0.5.0",
-    "metalsmith-prism": "3.1.0",
+    "metalsmith-prism": "5.0.2",
     "metalsmith-stylus": "3.0.0",
     "metalsmith-yearly-pagination": "2.0.0",
     "ncp": "2.0.0",
